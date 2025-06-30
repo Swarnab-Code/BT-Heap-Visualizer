@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #01bfad;
+	color: white;
+	padding: 0 15px;
+	z-index: 10;
+}
+
+.header {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.alt_btn {
+	background: transparent;
+	color: white;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	border-bottom: 1px solid white;
+	margin-right: 50px;
+}
+
+.alt_btn:hover,
+.alt_btn:focus {
+	color: #000;
+	border-bottom-color: black;
+}
+
+.container {
+	margin-top: 70px;
+	padding: 0 15px;
+}
+
+.inputs input,
+.inputs button {
+	margin: 5px;
+	padding: 5px 10px;
+}
+
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.numbers_added {
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#number_row th {
+	padding: 6px 10px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	background-color: #f9f9f9;
+}
+
+th {
+	border: 1px solid black;
+	width: 25px;
+	text-align: center;
+}
+
+.canvas_container {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.canvas {
+	width: 100%;
+	border: 1px solid red;
+	display: block;
+}
+
+#info_bullets {
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.info_header {
+	font-size: 22px;
+	background: #01bfad;
+	color: white;
+	padding: 10px;
+}
+
+.point {
+	margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+	.header {
+		font-size: 18px;
+	}
+
+	.alt_btn {
+		font-size: 14px;
+	}
+}

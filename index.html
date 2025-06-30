@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Binary Tree & Heap Visualizer</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<nav class="navbar">
+		<span class="header">Binary Tree Visualizer</span>
+		<button class="alt_btn" id="bt_heap_btn">Heap Visualizer</button>
+	</nav>
+
+	<main class="container">
+		<section class="controls">
+			<div class="inputs">
+				<input type="number" id="input" placeholder="0-99" min="0" max="99" />
+				<button id="add_button">Add</button>
+				<button id="remove_button">Remove</button>
+				<button id="clear_button">Clear Tree</button>
+			</div>
+			<div class="numbers_added">
+				<p class="text left_space">Nos.&nbsp;</p>
+				<table>
+					<tbody>
+						<tr id="number_row">
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="canvas_container">
+			<canvas id="canvas" class="canvas"></canvas>
+		</section>
+	</main>
+
+	<section id="info_bullets">
+		<h1 class="info_header">Binary Tree Info</h1>
+		<p class="point">1. Each node can have max two children.</p>
+		<p class="point">2. A leaf is a node with no children.</p>
+		<p class="point">3. Full binary tree: every node has 0 or 2 children.</p>
+		<p class="point">4. Leftmost is smallest, rightmost is largest.</p>
+		<p class="point">5. A complete tree fills levels left to right.</p>
+	</section>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
